@@ -16,7 +16,6 @@ void day1::day1p1() {
 }
 
 
-
 int day1::findValueSum2(std::vector<int> &numbers) {
     int value1 = 0, value2 = 0;
     for (value1 = 0; value1 < numbers.size(); ++value1) {
@@ -30,7 +29,7 @@ int day1::findValueSum2(std::vector<int> &numbers) {
     throw std::exception();
 }
 
-int day1::findValueSum3(const std::vector<int>& numbers) {
+int day1::findValueSum3(const std::vector<int> &numbers) {
     int value1, value2, value3;
     for (value1 = 0; value1 < numbers.size(); ++value1) {
         for (value2 = value1; value2 < numbers.size(); ++value2)
@@ -43,7 +42,7 @@ int day1::findValueSum3(const std::vector<int>& numbers) {
 }
 
 
- void day1::day1logic(bool isPart1) {
+void day1::day1logic(bool isPart1) {
     //find the 2 entries that sum to 2020
     //and then multiply those two numbers together
 
@@ -65,7 +64,6 @@ int day1::findValueSum3(const std::vector<int>& numbers) {
     int temp;
     std::ifstream day1input;
     day1input.open("day1input.txt");
-    int cnt = 0;
     int x;
     // check that array is not already full
     while (day1input >> x) {
@@ -76,8 +74,8 @@ int day1::findValueSum3(const std::vector<int>& numbers) {
         throw std::exception();
     }
     //print file
-    for (auto i : numbers)
-        std::cout << i << std::endl;
+    //for (auto i : numbers)
+    //    std::cout << i << std::endl;
     day1input.close();
     int result;
     try {

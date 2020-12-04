@@ -17,7 +17,7 @@
 
 class day3 {
 public:
-
+    static void day3logic();
     static void day3part1();
 };
 
