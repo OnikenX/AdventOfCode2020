@@ -70,8 +70,8 @@ bool verify_conditions(std::string key, std::string value) {
             return false;
         if (value[0] != '#')
             return false;
-        for (char c : value)
-            if (!(isdigit(c) || ('a' <= c && c <= 'f')))
+        for (int i=1;i< value.size();++i)
+            if (!(isdigit(value[i]) || ('a' <= value[i] && value[i] <= 'f')))
                 return false;
         return true;
     } else if (key == "ecl") {
@@ -90,7 +90,7 @@ bool verify_conditions(std::string key, std::string value) {
 }
 
 void day4::run() {
-    std::ifstream input("day4debug.txt");
+    std::ifstream input("day4input.txt");
     std::string str, key;
     int corretos_parte1 = 0;
     int corretos_parte2 = 0;
@@ -106,6 +106,7 @@ void day4::run() {
             if (verifica_corretos(valores, n_valores_parte2))
                 ++corretos_parte2;
             n_valores_parte1 = 0;
+            n_valores_parte2 = 0;
         } else {
             std::stringstream ss(str);
             while (ss >> str) {

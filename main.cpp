@@ -17,8 +17,8 @@ int main() {
     day2::part1();
     day2::part2();
 //
-//    std::cout << std::endl << "Day 3:" << std::endl;
-//    day3::day3logic();
+    std::cout << std::endl << "Day 3:" << std::endl;
+    day3::day3logic();
 //
     std::cout << std::endl << "Day 4:" << std::endl;
     day4::run();

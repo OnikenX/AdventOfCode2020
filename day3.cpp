@@ -53,7 +53,7 @@ void day3::day3logic() {
     counters.push_back(std::make_shared<tree_counter>(1, 7));
     //ler o file e avalia as arvores
     {
-        std::ifstream day3input("day3input.txt");
+        std::ifstream day3input("day3valent.txt");
         std::string x;
         int line = 0;
         day3input >> x;//skip at the first line
