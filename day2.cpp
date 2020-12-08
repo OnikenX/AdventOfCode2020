@@ -104,7 +104,7 @@ bool isAccordingToPolicy(std::string line, bool is_the_policy_the_new_one) {
  */
 
 void day2::day2logic(bool is_the_policy_the_new_one) {
-    std::ifstream day2input("day2input.txt");
+    std::ifstream day2input("day2inputvalent.txt");
     int counter = 0;
     std::string tmpline;
     if (day2input.is_open())

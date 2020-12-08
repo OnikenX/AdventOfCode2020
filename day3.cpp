@@ -41,10 +41,6 @@ public:
         return input.str();
     }
 
-    ~tree_counter() {
-        std::cout << "tree_counter deleted" << std::endl;
-    }
-
 };
 
 void day3::day3logic() {
@@ -72,11 +68,11 @@ void day3::day3logic() {
     {
         long long small = 1;
         for (const auto &it : counters) {
-            std::cout << it->to_string() << std::endl;
+//            std::cout << it->to_string() << std::endl;
             if (it->counter == 0)
                 continue;
             small *= it->counter;
-            std::cout << "small: " << small << std::endl;
+//            std::cout << "small: " << small << std::endl;
         }
 
         std::cout << "Value part 2: " << small << std::endl;
