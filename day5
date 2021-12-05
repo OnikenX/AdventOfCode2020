@@ -1,0 +1,8 @@
+#pragma once
+#include "macros"
+#include <fstream>
+#include <iostream>
+
+namespace day5{
+    void all();
+}

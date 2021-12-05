@@ -1,0 +1,5 @@
+#pragma once
+
+#include <fstream>
+
+auto read_file(int day) -> std::ifstream;

@@ -6,7 +6,7 @@
 #include <set>
 #include <map>
 #include <iostream>
-#include "day6.h"
+#include "day6.hpp"
 void day6::run() {
     std::ifstream input("day6input.txt");
     std::string x;

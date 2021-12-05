@@ -3,7 +3,7 @@
 //
 
 #include <fstream>
-#include "day3.h"
+#include "day3.hpp"
 #include <vector>
 #include <iostream>
 #include <sstream>

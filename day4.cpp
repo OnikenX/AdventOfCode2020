@@ -8,7 +8,7 @@
 #include <sstream>
 #include <iostream>
 #include <algorithm>
-#include "day4.h"
+#include "day4.hpp"
 
 //verifies if everything is true, while it makes everything false
 inline bool all_true_but_false(auto &map) {

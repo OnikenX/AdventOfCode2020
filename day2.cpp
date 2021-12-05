@@ -5,7 +5,7 @@
 #include <fstream>
 #include <vector>
 #include <string>
-#include "day2.h"
+#include "day2.hpp"
 #include <ctype.h>
 #include <iostream>
 

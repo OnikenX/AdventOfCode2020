@@ -5,6 +5,8 @@
 #ifndef ADVENTOFCODE2020_DAY1_H
 #define ADVENTOFCODE2020_DAY1_H
 
+#include <vector>
+
 /**
  * implementation of the day 1 problem
  */
